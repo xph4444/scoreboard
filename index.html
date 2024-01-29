@@ -1,0 +1,60 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+                
+    </head>
+    <body>
+        <div class="container">
+            
+            <div class="board-section" id="home-section">
+                
+                <h5 class="leader-text" id="leader-home">LEADER</h5>
+                <h3>HOME</h3>
+                 
+                <div class="score-screen">
+                    <h1 class="score-text" id="home-score">0</h1>
+                </div>
+               <div class="foul-section">
+                    <h4 class="foul-text">Foul <span id="home-foul-number">0</span></h4>
+                    <div class="btn-foul-group">
+                        <button class="btn-foul" id=" home-foul-add" onclick="home_foul_add()">+</button>
+                         <button class="btn-foul" id=" home-foul-minus" onclick="home_foul_minus()">-</button>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button class="btn-score" onclick="home_add_1point()">+1</button>
+                    <button  class="btn-score" onclick="home_add_2points()">+2</button>
+                    <button  class="btn-score" onclick="home_add_3points()">+3</button>
+                </div>
+                 
+            </div>
+            <div class="board-section" id="guest-section">
+                <h5 class="leader-text" id="leader-guest">LEADER</h5>
+                <h3>GUEST</h3>
+                <div class="score-screen">
+                    <h1 class="score-text" id="guest-score">0</h1>
+                </div>
+                <div class="foul-section">
+                    <h4 class="foul-text">Foul <span id="guest-foul-number">0</span></h4>
+                    <div class="btn-foul-group">
+                        <button class="btn-foul"  onclick="guest_foul_add()">+</button>
+                         <button class="btn-foul" onclick="guest_foul_minus()">-</button>
+                    </div>
+                </div>
+                <div class="btn-group">
+                    <button  class="btn-score" onclick="guest_add_1point()">+1</button>
+                    <button  class="btn-score" onclick="guest_add_2points()">+2</button>
+                    <button  class="btn-score" onclick="guest_add_3points()">+3</button>
+                </div>
+            </div>
+        </div>
+             <button class="btn-newgame" onclick="newGame()">New Game</button>
+        
+        
+       
+        
+        
+        <script src="index.js"></script>
+    </body>
+</html>
