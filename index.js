@@ -62,6 +62,13 @@ function newGame() {
     guestScore = 0
     homeScoreText.textContent=homeScore;
     guestScoreText.textContent=guestScore;
+    homeFoul = 0
+    guestFoul = 0
+    homeFoulText.textContent = 0;
+    guestFoulText.textContent = 0;
+    compare()
+}
+
     compare()
 }
 
