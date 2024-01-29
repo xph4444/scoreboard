@@ -69,9 +69,6 @@ function newGame() {
     compare()
 }
 
-    compare()
-}
-
 function home_foul_add() {
     homeFoul+=1;
     homeFoulText.textContent=homeFoul;
